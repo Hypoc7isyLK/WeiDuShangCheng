@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="210dp"
+        android:padding="10dp"
+        android:background="@drawable/yuanjiao">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/foot_simpledraweeview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/foot_textview_name"
+            android:layout_below="@id/foot_simpledraweeview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxEms="10"
+            android:ellipsize="end"
+            android:text="1231"
+            />
+        <TextView
+            android:id="@+id/foot_textview_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥111.00"
+            android:layout_alignTop="@+id/foot_textview_liu"
+            android:layout_alignParentLeft="true"
+            android:textSize="16sp"
+            android:textColor="#F00"/>
+        <TextView
+            android:id="@+id/foot_textview_liu"
+            android:layout_above="@+id/foot_textview_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已浏览5次"/>
+        <TextView
+            android:id="@+id/foot_textview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-09-03 10:58"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

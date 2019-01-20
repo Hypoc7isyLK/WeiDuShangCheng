@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#4f4f4f"
+        ></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="horizontal"
+            android:background="#4f4f4f"
+            >
+
+            <RadioGroup
+                android:id="@+id/popupwindow_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:button="@null"
+                    android:textSize="25sp"
+                    android:text="男装" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:textSize="25sp"
+                    android:text="男鞋" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25sp"
+                    android:button="@null"
+                    android:text="女装" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25sp"
+                    android:button="@null"
+                    android:text="女鞋" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25sp"
+                    android:button="@null"
+                    android:text="T恤" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25sp"
+                    android:button="@null"
+                    android:text="美妆护肤" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25sp"
+                    android:button="@null"
+                    android:text="手机数码" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25sp"
+                    android:button="@null"
+                    android:text="户外运行" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="25sp"
+                    android:button="@null"
+                    android:text="零食" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="#999999"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/popupwindow_item_class"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra10"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="11dp"
+                    android:button="@null"
+                    android:text="毛衣"
+                    android:drawableTop="@mipmap/category_icon_sweater_n_hdpi"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                     />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra11"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="25dp"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/category_icon_pants_n_hdpi"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="裤装" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra12"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="25dp"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/category_icon_skirt_n_hdpi"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="裙装" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra13"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="25dp"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/category_icon_coat_n_hdpi"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="外套" />
+
+                <RadioButton
+                    android:id="@+id/popupwindow_item_child_ra14"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/category_icon_hoodie_n_hdpi"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="卫衣" />
+
+            </RadioGroup>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

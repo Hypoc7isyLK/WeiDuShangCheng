@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bwie.likuo">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/jdsez"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/TranslucentTheme">
+        <activity android:name=".activity.GuideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5c3e8df7f1f55650550005e3"/>    
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.HomeSouSuoActivity" />
+        <activity android:name=".activity.PaymentActivity" />
+        <activity android:name=".activity.DetailsActivity" />
+        <activity android:name=".activity.FragMainInformationActivity" />
+        <activity android:name=".activity.FragMainAddressActivity" />
+        <activity android:name=".activity.Mine_Address_AddActivity" />
+        <activity android:name=".activity.MineSetActivity" />
+        <activity android:name=".activity.FragMainFootprintActivity" />
+        <activity android:name=".activity.PublishCircleActivity" />
+        <activity android:name=".activity.MyCircleActivity"></activity>
+    </application>
+
+</manifest>

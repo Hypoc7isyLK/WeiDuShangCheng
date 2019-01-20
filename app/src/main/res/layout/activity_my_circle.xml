@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    tools:context=".fragment.CircleFragment">
+    <RelativeLayout
+        android:id="@+id/ret"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的圈子"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/mine_address_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="26dp"
+            android:text="删除"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+
+
+    </RelativeLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ret"
+        android:id="@+id/fragment_circle_recyclerview"/>
+
+    <ImageView
+        android:id="@+id/add_circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/btn_send"/>
+
+</RelativeLayout >

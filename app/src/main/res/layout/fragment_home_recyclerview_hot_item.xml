@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/yuanjiao"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_margin="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/homefragment_hot_fresco"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="sldghslg"
+        android:layout_below="@+id/homefragment_hot_fresco"
+        android:layout_centerHorizontal="true"
+        android:textColor="#666666"
+        android:maxWidth="100dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:id="@+id/homefragment_hot_textview_shop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#ff0000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/homefragment_hot_textview_shop"
+        android:text="sldghslg"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/homefragment_hot_textview_price"/>
+
+</RelativeLayout>

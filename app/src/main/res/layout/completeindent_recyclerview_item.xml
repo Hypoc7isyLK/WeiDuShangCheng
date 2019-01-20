@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yuanjiao">
+
+        <TextView
+            android:id="@+id/dingdan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="订单号"
+            android:textColor="#666666"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/completeindent_recyclerview_item_hao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dingdan"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="8456186451978465978465"
+            android:textSize="12sp"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/completeindent_recyclerview_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:text="2018/10/28"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/completeindent_recyclerview_item_quxiao"
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/completeindent_recyclerview_item_recyclerview"
+            android:text="取消订单" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/completeindent_recyclerview_item_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dingdan" />
+
+        <!--<TextView
+            android:id="@+id/completeindent_recyclerview_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/completeindent_recyclerview_item_recyclerview"
+            android:layout_alignEnd="@+id/completeindent_recyclerview_item_zhifu"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="6dp"
+            android:text="总共1件商品，共494元" />-->
+
+        <Button
+            android:id="@+id/completeindent_recyclerview_item_zhifu"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape1"
+            android:text="去支付"
+            android:layout_below="@id/completeindent_recyclerview_item_recyclerview"
+            android:layout_alignParentRight="true"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Mine_Address_AddActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="新增收货地址"/>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/yuanjiao">
+
+
+            <RelativeLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shoujianren"
+                    android:textSize="14sp"
+                    android:text="收件人:"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#666666"/>
+
+                <EditText
+                    android:layout_toRightOf="@id/shoujianren"
+                    android:id="@+id/mine_address_add_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    android:hint="请输入收件人姓名" />
+
+                <View
+                    android:layout_below="@id/shoujianren"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f2f2f2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/line2"
+                android:layout_below="@id/line1"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/number"
+                    android:textSize="14sp"
+                    android:text="手机号码:"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#666666" />
+
+                <EditText
+                    android:id="@+id/mine_address_add_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/number"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_below="@id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f2f2f2"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line3"
+                android:layout_below="@id/line2"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="所在地区:"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#666666" />
+
+                <TextView
+                    android:id="@+id/mine_address_add_diqu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/address"
+                    android:hint="选择地区"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_below="@id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f2f2f2"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/line4"
+                android:layout_below="@id/line3"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/address2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="详细地址:"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#666666" />
+
+                <EditText
+                    android:id="@+id/mine_address_add_xiangxi"
+                    android:layout_toRightOf="@id/address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    android:hint="请输入详细地址" />
+
+                <View
+                    android:layout_below="@id/address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f2f2f2"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line5"
+                android:layout_below="@id/line4"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/youbian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="邮政编码:"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#666666" />
+
+                <EditText
+                    android:id="@+id/mine_address_add_youzheng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/youbian"
+                    android:background="@null"
+                    android:hint="请输入邮政编码"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_below="@id/youbian"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f2f2f2"/>
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/mine_address_add_cun"
+        android:layout_width="116dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape1"
+        android:text="保存并使用"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+
+
+</RelativeLayout>

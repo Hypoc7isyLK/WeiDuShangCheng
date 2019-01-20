@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/linner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/search_back"
+            android:src="@mipmap/common_nav_btn_back_n_hdpi"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <EditText
+            android:layout_centerVertical="true"
+            android:id="@+id/search_editText"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rectangle"
+            android:hint="请输入您要搜索的商品"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="搜索"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shape"/>
+    </RelativeLayout>
+    <!--<TextView
+        android:id="@+id/hom_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更多商品》》》"
+        android:layout_gravity="center"/>-->
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/search_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

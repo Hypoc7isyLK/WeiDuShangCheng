@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:background="#2eee"
+            android:layout_margin="10dp"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/childorde_item_image"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <TextView
+                android:id="@+id/childorde_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/childorde_item_image"
+                android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                android:layout_marginTop="8dp"
+                android:textColor="#666666"
+                android:textSize="12sp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/childorde_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/childorde_item_image"
+                android:layout_alignParentBottom="true"
+                android:textColor="#ff0606"
+                android:layout_marginBottom="8dp"
+                android:textSize="14sp"
+                android:text="￥1024"/>
+
+            <com.bwie.likuo.view.MyAddSubView
+                android:id="@+id/childorde_item_addsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp">
+
+            </com.bwie.likuo.view.MyAddSubView>
+
+        </RelativeLayout>
+
+</RelativeLayout>
